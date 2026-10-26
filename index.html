@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seyed Mohammad Hossein Mousavi | Front-End Developer</title>
+<meta name="description" content="Portfolio of Seyed Mohammad Hossein Mousavi, a front-end developer building fast, accessible interfaces.">
+<link rel="icon" type="image/jpeg" href="assets/images/profile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<canvas id="scene" aria-hidden="true"></canvas>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="logo" href="#home" aria-label="Home"><span class="grad">SM.</span></a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <section id="home">
+    <div class="wrap hero">
+      <div>
+        <p class="hello stag" style="--i:0">Hello, I’m</p>
+        <h1 id="name">Seyed Mohammad Hossein Mousavi</h1>
+        <p class="role stag" style="--i:5"><span class="grad">Front-End Developer</span></p>
+        <p class="intro stag" style="--i:6" id="intro"></p>
+        <div class="cta stag" style="--i:7">
+          <a class="btn primary" href="#projects">View my work</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="photo stag" style="--i:3">
+        <div class="glow"></div><div class="ring"></div>
+        <div class="frame"><img src="assets/images/profile.jpg" alt="Portrait of Seyed Mohammad Hossein Mousavi" width="720" height="720" fetchpriority="high"></div>
+        <span class="chip c1">React</span><span class="chip c2">JavaScript</span><span class="chip c3">CSS</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2 class="title reveal">About me</h2>
+      <div class="about">
+        <div class="glass reveal" id="about-text"></div>
+        <ul class="glass facts reveal" style="--d:.12s;padding:32px" id="facts"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2 class="title reveal">Skills</h2>
+      <p class="lead reveal">The tools I use to design, build, and ship interfaces.</p>
+      <div class="skills" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2 class="title reveal">Projects</h2>
+      <p class="lead reveal">Placeholder projects. Replace them in <code>CONFIG.projects</code> at the bottom of this file.</p>
+      <div class="projects" id="projects-grid"></div>
+      <p class="note reveal">Buttons without a URL show a reminder instead of opening a page.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact reveal">
+        <h2>Let’s build something together</h2>
+        <p>I’m open to new roles and freelance projects. Send me an email and I’ll reply as soon as I can.</p>
+        <a class="btn primary" id="email-btn" href="#">Email me</a>
+        <div class="socials" id="socials"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="year"></span> Seyed Mohammad Hossein Mousavi</span>
+    <a class="totop" href="#top" aria-label="Back to top">↑ Back to top</a>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
